@@ -62,8 +62,10 @@ Os usuários podem criar, editar e visualizar seus perfis, incluindo a foto, nom
 ## Conclusão
 O UserProfileApp é um exemplo de como podemos criar uma aplicação simples e funcional com Ruby on Rails, utilizando recursos como autenticação, gerenciamento de sessões e upload de arquivos com Active Storage. É um ótimo projeto para quem está aprendendo a trabalhar com essas tecnologias ou para quem deseja implementar funcionalidades semelhantes em suas próprias aplicações.[confira o codigo completo](https://github.com/fernandodxx/Userprofile)
 
-## Image
+## Imagens
+
 **Dark**
-![Dark mode only](/assets/img/posts/userprofile-dark.jpeg){: .dark }
+![Dark mode only]({{ '/assets/img/posts/userprofile-dark.jpeg' | relative_url }}){:: .dark }
+
 **Light**
-![Light mode only](/assets/img/posts/userprofile-lith.png){: .light }
+![Light mode only]({{ '/assets/img/posts/userprofile-lith.png' | relative_url }}){:: .light }

@@ -11,12 +11,10 @@ post: true
     {% endif %}
 
     <div class="post-meta">
-      <!-- Published Date -->
       <span class="post-date">
         Posted on {{ page.date | date: "%B %d, %Y" }}
       </span>
 
-      <!-- Last Modified -->
       {% if page.last_modified_at and page.last_modified_at != page.date %}
       <span class="post-updated">
         Updated on {{ page.last_modified_at | date: "%B %d, %Y" }}
@@ -27,7 +25,7 @@ post: true
 
   {% if page.image %}
   <figure class="post-image">
-    <img src="{{ page.image }}" alt="{{ page.image_alt | default: 'Post Image' }}">
+    <img src="{{ page.image | relative_url }}" alt="{{ page.image_alt | default: 'Post Image' }}">
     {% if page.image_alt %}
     <figcaption>{{ page.image_alt }}</figcaption>
     {% endif %}
@@ -45,7 +43,6 @@ post: true
   </div>
 
   <footer class="post-footer">
-    <!-- Categories -->
     {% if page.categories.size > 0 %}
     <div class="post-categories">
       Categories:
@@ -58,7 +55,6 @@ post: true
     </div>
     {% endif %}
 
-    <!-- Tags -->
     {% if page.tags.size > 0 %}
     <div class="post-tags">
       Tags:

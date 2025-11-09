@@ -1,56 +1,11 @@
 ---
 ---
 
-$home-bg:        #F8FAFC;
-$hd-ft-bg:       linear-gradient(135deg, #FFFFFF, #F1F5F9);
-$post-bg:        linear-gradient(135deg, #F1F5F9, #FFFFFF);
-$color-footer:   #E5E7EB;
-
-$title:          #1E293B;
-$text:           #475569;
-$text-post:      #334155;
-
-$accent:         #2563EB;
-$accent-hover:   #1D4ED8;
-$header-title:   #E4E4E7;
-
-:root {
-  /* Light Mode (default) */
-  --home-bg:        #F8FAFC;
-  --hd-ft-bg:       linear-gradient(135deg, #FFFFFF, #F1F5F9);
-  --post-bg:        linear-gradient(135deg, #F1F5F9, #FFFFFF);
-  --color-footer:   #E5E7EB;
-
-  --title:          #1E293B;
-  --text:           #475569;
-  --text-post:      #334155;
-
-  --accent:         #2563EB;
-  --accent-hover:   #1D4ED8;
-  --header-title:   #2563EB;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --home-bg:        #0B0E11;
-    --hd-ft-bg:       linear-gradient(135deg, #0B0E11, #1A1F26);
-    --post-bg:        linear-gradient(135deg, #1A1F26, #0B0E11);
-    --color-footer:   #111418;
-
-    --title:          #F8FAFC;
-    --text:           #CBD5E1;
-    --text-post:      #E2E8F0;
-
-    --accent:         #F4F4F5; // quase branco (cinza claro)
-    --accent-hover:   #E4E4E7; // um tom abaixo
-    --header-title:   #E4E4E7;
-  }
-}
-
 @import "variables";
-@import "layout/header";
-@import "layout/footer";
-@import "layout/globals";
-@import "pages/home";
-@import "pages/post";
-@import "tab/portfolio";
+@import "globals";
+@import "header";
+@import "footer";
+@import "home";
+@import "post";
+@import "portfolio";
+

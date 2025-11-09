@@ -4,7 +4,7 @@ title: "Sistema de Reservas de Voos com Ruby on Rails ✈️"
 date: 2024-01-08
 description: "Este é um post incrível sobre programação."
 ---
-![Light mode only](/assets/img/photo-1488085061387-422e29b40080.png){: .light }
+![Light mode only]({{ '/assets/img/posts/photo-1488085061387-422e29b40080.png' | relative_url }}){:: .light }
 
 ## Introdução 
 Recentemente, desenvolvi um sistema de reservas de voos utilizando Ruby on Rails, onde os usuários podem pesquisar voos, selecionar o voo desejado e inserir suas informações pessoais para concluir a reserva. Este post tem como objetivo compartilhar os detalhes do desenvolvimento dessa aplicação.

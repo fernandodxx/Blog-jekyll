@@ -1,4 +1,3 @@
-/* --- Estilo de Cabeçalho Minimalista --- */
 .site-header-minimal {
   background: var(--bg-secondary);
   padding: 20px 0;
@@ -18,10 +17,8 @@
   justify-content: space-between;
   align-items: center;
 
-  /* REMOVER: flex-direction: column e align-items: flex-start AQUI */
-  /* Isso permite que eles fiquem em linha */
   @media (max-width: 768px) {
-    padding: 0 15px; /* Reduz padding lateral */
+    padding: 0 15px;
   }
 }
 
@@ -31,17 +28,17 @@
     margin: 0;
     padding: 0;
     display: flex;
-    flex-wrap: wrap; /* Mantenha para permitir que os links quebrem linha se não couberem todos */
-    justify-content: flex-end; /* Alinha à direita */
-    gap: 25px; /* Espaço entre os links */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 25px;
 
     @media (max-width: 768px) {
-      gap: 15px; /* Reduz o espaço entre links em telas médias */
-      justify-content: flex-end; /* Continua alinhado à direita */
+      gap: 15px;
+      justify-content: flex-end;
     }
     @media (max-width: 480px) {
-      gap: 10px; /* Reduz ainda mais o espaço para celulares */
-      justify-content: center; /* Centraliza os links se eles ficarem apertados */
+      gap: 10px;
+      justify-content: center;
     }
   }
 
@@ -64,8 +61,8 @@
     }
 
     @media (max-width: 480px) {
-      font-size: 0.9rem; /* Reduz o tamanho da fonte dos links para caberem mais */
-      padding: 5px 8px; /* Pequeno padding para dar "respiro" */
+      font-size: 0.9rem;
+      padding: 5px 8px;
     }
   }
 }

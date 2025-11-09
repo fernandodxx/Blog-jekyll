@@ -34,16 +34,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-
-collections:
-  tabs:
-    output: true 
-    permalink: /:path/
-
-  posts:
-    output: true 
-
-
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #

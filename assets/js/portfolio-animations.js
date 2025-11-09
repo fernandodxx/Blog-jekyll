@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  // Verifique se ScrollReveal está carregado
+  //ScrollReveal
   if (typeof ScrollReveal !== 'undefined') {
     ScrollReveal().reveal('.hero-content', {
       delay: 200,
