@@ -67,5 +67,3 @@ O UserProfileApp é um exemplo de como podemos criar uma aplicação simples e f
 **Dark**
 ![Dark mode only]({{ '/assets/img/posts/userprofile-dark.jpeg' | relative_url }}){:: .dark }
 
-**Light**
-![Light mode only]({{ '/assets/img/posts/userprofile-lith.png' | relative_url }}){:: .light }
