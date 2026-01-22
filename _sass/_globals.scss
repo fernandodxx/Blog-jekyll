@@ -1,34 +1,87 @@
-body {
-  background: var(--bg-primary);
-  margin: 0;
-  padding: 0; 
-  overflow-x: hidden;
-  color: var(--text);
-  font-family: 'Inter', 'Helvetica Neue', Arial, sans-serif;
+@font-face {
+  font-family: 'Lostar';
+  /* Se seu CSS fica em assets/css/ e a fonte em assets/fonts/ */
+  src: url('../fonts/Lostar.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;600;800&family=Syne:wght@800&display=swap');
 
-main#main-content {
-  flex: 1;
+$font-main: 'Inter', sans-serif;
+$font-code: 'Space Mono', monospace;
+$font-heading: 'Lostar', sans-serif;
+
+// 3. VARIÁVEIS DE CORES (CSS Variables para Dark Mode)
+:root {
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --text-primary: #1f2937;
+  --text-secondary: #4b5563;
+  --accent: #3498db;
+  --accent-hover: #2980b9;
+  --border-color: #e5e7eb;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-primary: #111827;
+    --bg-secondary: #1f2937;
+    --text-primary: #f9fafb;
+    --text-secondary: #9ca3af;
+    --accent: #60a5fa;
+    --accent-hover: #3b82f6;
+    --border-color: #374151;
+  }
+}
+
+// 4. ESTILOS BASE (Globais)
+body {
   background-color: var(--bg-primary);
   color: var(--text-primary);
+  font-family: $font-main;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+main#main-content {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  box-sizing: border-box;
 }
 
-h1,
-h2,
-h3 {
-  font-weight: 600;
+h1, h2, h3 {
+  color: var(--text-primary);
+  font-weight: 700;
+  line-height: 1.2;
 }
 
 a {
+  color: var(--accent);
   text-decoration: none;
-  transition: color 0.2s;
+  transition: 0.2s ease;
 
   &:hover {
     color: var(--accent-hover);
   }
+}
+
+// 5. ESCOPO DO PORTFÓLIO (Não afeta o resto do blog)
+.portfolio-wrapper {
+  // Sobrescreve as fontes apenas aqui dentro
+  .hero__heading {
+    font-family: $font-heading;
+  }
+
+  .project-card__link, 
+  .hero__contact-links,
+  .tech-tag {
+    font-family: $font-code;
+  }
+
+  // Garante que o fundo do portfólio seja consistente
+  background-color: var(--bg-primary);
 }

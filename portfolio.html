@@ -1,88 +1,96 @@
 ---
 layout: default
-title: Portfólio - Seu Nome
+title: Portfólio - Fernando Santos
 portfolio: true
 ---
 
-<main class="main-2">
-  <section class="hero-section">
-    <div class="hero-content">
-      <h1 class="hero-title">Olá, eu sou <span class="highlight-text">Fernando</span>.</h1>
-      <p class="hero-subtitle">Desenvolvedor Ruby on Rails | Construindo soluções web robustas e eficientes.</p>
-      <div class="social-links">
-        <a href="https://github.com/fernandodxx" target="_blank" aria-label="GitHub" class="social-icon">
-          <i class="fab fa-github"></i>
-        </a>
-        <a href="https://www.linkedin.com/in/fernando-santoss" target="_blank" aria-label="LinkedIn" class="social-icon">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="mailto:fernandosillvasantoss@gmail.com" aria-label="Email" class="social-icon">
-          <i class="fas fa-envelope"></i>
-        </a>
+
+<div class="portfolio-wrapper">
+  <main class="hero">
+    <section class="hero__content">
+      <p class="hero__emoji">🧑‍💻</p>
+      <h1 class="hero__heading">Hello.</h1>
+
+      <p class="hero__paragraph">
+        I’m Fernando Santos — a Full-Stack Ruby on Rails Developer specialized
+        in building scalable, high-performance applications.
+      </p>
+
+      <p class="hero__paragraph">
+        With extensive experience in designing and implementing efficient
+        software solutions, I focus on delivering robust, maintainable, and
+        future-ready systems powered by Ruby on Rails.
+      </p>
+
+      <a href="https://github.com/fernandodxx" class="button button--primary">View Projects &rarr;</a>
+
+      <p class="hero__contact-links">
+        Get in touch via
+        <a href="mailto:fernandosillvasantoss@gmail.com" class="link-style">Email</a>
+        or
+        <a href="https://www.linkedin.com/in/fernando-santoss" target="linkedin" class="link-style">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+
+  <section class="projects">
+    <div class="projects__content">
+      <h2 class="projects__heading">My Projects</h2>
+
+      <div class="projects__grid">
+        <article class="project-card">
+          <header class="project-card__header">
+            <h3 class="project-card__title">Flight Reservation</h3>
+            <div class="project-card__tech-stack">
+              <span class="tech-tag tech-tag--ruby">Rails 7 </span>
+              <span class="tech-tag tech-tag--db"> SQLite </span>
+              <span class="tech-tag tech-tag--js"> ActiveRecord </span>
+            </div>
+          </header>
+          <p class="project-card__description">
+            Flight booking system built with Ruby on Rails. Users search for flights by airport and date, select the desired option, and input passenger data via nested forms.
+          </p>
+          <div class="project-card__links">
+            <a href="https://github.com/fernandodxx/Flight-Booker" target="_blank" class="project-card__link">Ver Código (GitHub)</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <header class="project-card__header">
+            <h3 class="project-card__title">Quote Editor - Hotwire Rails</h3>
+            <div class="project-card__tech-stack">
+              <span class="tech-tag tech-tag--ruby">Rails 7 </span>
+              <span class="tech-tag tech-tag--js"> Hotwire</span>
+              <span class="tech-tag tech-tag--db"> PostgreSQL</span>
+              <span class="tech-tag tech-tag--sass"> Sass</span>
+            </div>
+          </header>
+          <p class="project-card__description">
+            Reactive single-page application built with Hotwire/Turbo Rails. Real-time updates via Action Cable and SPA experience without custom JavaScript.
+          </p>
+          <div class="project-card__links">
+            <a href="https://github.com/fernandodxx/Quote-Editor" target="_blank" class="project-card__link">Ver Código (GitHub)</a>
+          </div>
+        </article>
+
+       <article class="project-card">
+         <header class="project-card__header">
+           <h3 class="project-card__title">Pay TV System - Rails 8</h3>
+           <div class="project-card__tech-stack">
+             <span class="tech-tag tech-tag--ruby">Rails 8 </span>
+             <span class="tech-tag tech-tag--js"> Hotwire</span>
+             <span class="tech-tag tech-tag--db"> SQLite</span>
+           </div>
+         </header>
+        <p class="project-card__description">
+          Complete subscription management system for pay-TV services. Features plans, packages, and additional services CRUD, with complex business validation rules. Automatically generates 12 monthly invoices, bills, and payment books per subscription. Uses transactions for data integrity and Hotwire for reactive UI.
+        </p>
+        <div class="project-card__links">
+          <a href="https://github.com/fernandodxx/Pay-tv-system" target="_blank" class="project-card__link">Ver Código (GitHub)</a>
+        </div>
+      </article>
+
       </div>
     </div>
   </section>
-
-  <section class="section about-section" id="sobre">
-    <h2 class="section-title">Sobre mim</h2>
-    <p class="section-description">Sou desenvolvedor Ruby on Rails com experiência em criação de aplicações web escaláveis, APIs bem definidas e interfaces simples. Amo aprender, programar e compartilhar o que sei. Desde 2018 atuo como freelancer construindo soluções com foco em performance e qualidade.</p>
-    <p class="section-description">Minha paixão por tecnologia me impulsiona a buscar constantemente novos conhecimentos e desafios, garantindo que as soluções que entrego sejam não apenas funcionais, mas também inovadoras e eficientes.</p>
-  </section>
-
-  <section class="section projects-section" id="projetos">
-    <h2 class="section-title">Meus Projetos</h2>
-    <div class="projects-grid">
-
-      <div class="project-card">
-        <h3 class="project-title">Depot e-commerce</h3>
-        <p class="project-description">Desenvolvimento de um e-commerce (projeto Depot) baseado no livro "Desenvolvimento Web Ágil com Rails 7". Este e-commerce   demonstra a criação de um catálogo de produtos, carrinho de compras dinâmico, gestão de pedidos e integração de pagamentos. Um exemplo prático de aplicação   Rails de ponta a ponta.</p>
-        <div class="project-links">
-          <a href="https://github.com/fernandodxx/Depot" target="_blank" class="project-link">Código <i class="fab fa-github"></i></a>
-        </div>
-      </div>
-    
-      <div class="project-card">
-        <h3 class="project-title">Flight Booking App</h3>
-        <p class="project-description">Aplicação Rails para reserva de voos.</p>
-        <div class="project-links">
-          <a href="https://github.com/fernandodxx/Flight-Booker" target="Flight-Booker" class="project-link">Código <i class="fab fa-github"></i></a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">Friend's List</h3>
-        <p class="project-description">Uma aplicação web simples e prática para gestão de contatos**, como amigos e familiares, desenvolvida com Ruby on Rails. Oferece uma interface intuitiva para armazenar, visualizar, adicionar, excluir e editar informações de contato.</p>
-        <div class="project-links">
-          <a href="https://github.com/fernandodxx/list" target="list" class="project-link">Código <i class="fab fa-github"></i></a>
-        </div>
-      </div>
-
-      <div class="project-card">
-        <h3 class="project-title">Eventos Privados</h3>
-        <p class="project-description">Desenvolvimento de uma plataforma, semelhante a um Eventbrite privado, que permite aos usuários criar e gerenciar eventos, além de controlar as inscrições. Este projeto explora relacionamentos muitos-para-muitos e o uso avançado de chaves estrangeiras no Rails.</p>
-        <div class="project-links">
-          <a href="https://github.com/fernandodxx/Events" target="_blank" class="project-link">Código <i class="fab fa-github"></i></a>
-        </div>
-      </div>
-      </div>
-  </section>
-
-  <section class="section technologies-section" id="tecnologias">
-    <h2 class="section-title">Tecnologias que utilizo</h2>
-    <ul class="tech-list">
-      <li><i class="devicon-ruby-plain colored"></i> Ruby</li>
-      <li><i class="devicon-rails-plain colored"></i> Ruby on Rails</li>
-      <li><i class="devicon-postgresql-plain colored"></i> PostgreSQL</li>
-      <li><i class="devicon-html5-plain colored"></i> HTML</li>
-      <li><i class="devicon-css3-plain colored"></i> CSS</li>
-      <li><i class="devicon-tailwindcss-plain colored"></i> Tailwind</li>
-      <li><i class="devicon-javascript-plain colored"></i> JavaScript</li>
-      <li><i class="devicon-hotwire-plain colored"></i> Hotwire</li>
-      <li><i class="devicon-rspec-plain colored"></i> RSpec</li>
-      <li><i class="devicon-git-plain colored"></i> Git</li>
-      <li><i class="devicon-github-plain colored"></i> GitHub</li>
-      <li><i class="devicon-linux-plain colored"></i> Linux</li>
-      <li><i class="devicon-terminal-plain colored"></i> Terminal</li>
-    </ul>
-  </section>
-</main>
+</div>
