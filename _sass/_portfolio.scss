@@ -53,13 +53,13 @@
         &__heading {
            font-family: 'Lostar', $font-main; // Se a Lostar falhar, usa a Inter
            color: #1f2937 !important;        // Força uma cor escura para aparecer
-           font-size: clamp(4rem, 8vw + 1rem, 8rem);
+           font-size: clamp(4rem, #{"8vw + 1rem"}, 8rem);
            font-weight: 800;
            visibility: visible !important;   // Garante que não esteja escondido
         }
 
         &__paragraph {
-            font-size: clamp(1.5rem, 4vw + 0.5rem, 2rem);
+            font-size: clamp(1.5rem, #{"4vw + 0.5rem"}, 2rem);
             margin-bottom: 2.5rem;
             line-height: 1.5;
             max-width: 800px;
