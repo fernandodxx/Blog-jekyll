@@ -9,10 +9,16 @@
   --text:           #475569;
   --text-post:      #334155;
   --header-title:   #2563EB;
+  --text-content:   #334155;
+  --text-light:     #64748B;
 
   /* Cores de Destaque (Accent) */
   --accent:         #2563EB;
   --accent-hover:   #1D4ED8;
+
+  /* Bordas e outros */
+  --border-color:   #E2E8F0;
+  --hover-bg:       rgba(37, 99, 235, 0.05);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,8 +33,14 @@
     --text:           #CBD5E1;
     --text-post:      #E2E8F0;
     --header-title:   #E4E4E7;
+    --text-content:   #E2E8F0;
+    --text-light:     #94A3B8;
 
     --accent:         #F4F4F5;
     --accent-hover:   #E4E4E7;
-  } 
+
+    /* Bordas e outros */
+    --border-color:   #334155;
+    --hover-bg:       rgba(255, 255, 255, 0.05);
+  }
 }

@@ -1,0 +1,51 @@
+{% comment %}
+  Table of Contents Generator
+  Extrai headings h2, h3, h4 do conteúdo e gera navegação semântica
+{% endcomment %}
+
+{% assign content_html = content | markdownify %}
+{% assign headings = content_html | split: '<h' | shift %}
+
+{% capture toc_items %}
+  {% for heading in headings %}
+    {% assign first_char = heading | slice: 0 %}
+    {% if first_char == '2' or first_char == '3' or first_char == '4' %}
+      {% assign level = first_char %}
+      {% assign heading_parts = heading | split: '>' %}
+      {% assign tag_and_attrs = heading_parts[0] %}
+      {% assign rest = heading_parts[1] %}
+      {% assign title_parts = rest | split: '</h' %}
+      {% assign title = title_parts[0] | strip_html %}
+      {% assign title_stripped = title | strip %}
+
+      {% if title_stripped != '' %}
+        {% assign id = title_stripped | slugify %}
+
+        {% if level == '2' %}
+          {% assign indent = '' %}
+        {% elsif level == '3' %}
+          {% assign indent = ' toc-item--indented' %}
+        {% else %}
+          {% assign indent = ' toc-item--deep' %}
+        {% endif %}
+
+        <li class="toc-item{{ indent }}" data-level="{{ level }}">
+          <a href="#{{ id }}" class="toc-link" data-target="{{ id }}">
+            {{ title_stripped }}
+          </a>
+        </li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endcapture %}
+
+{% assign toc_items_stripped = toc_items | strip %}
+{% assign toc_check = toc_items_stripped | split: '<li' | size %}
+
+{% if toc_check > 1 %}
+  <nav class="toc" aria-label="Table of contents">
+    <ul class="toc-list">
+      {{ toc_items }}
+    </ul>
+  </nav>
+{% endif %}
