@@ -1,95 +1,272 @@
 ---
 layout: default
-title: Fernando Santos
+title: Portfolio
+description: Full-Stack Ruby on Rails Developer - Fernando Santos
 portfolio: true
 ---
 
-
-<div class="portfolio-wrapper">
-  <main class="hero">
-    <section class="hero__content">
-      <p class="hero__emoji">🧑‍💻</p>
-      <h1 class="hero__heading">Hello.</h1>
-
-      <p class="hero__paragraph">
-        I’m Fernando Santos — a Full-Stack Ruby on Rails Developer specialized
-        in building scalable, high-performance applications.
-      </p>
-
-      <p class="hero__paragraph">
-        With extensive experience in designing and implementing efficient
-        software solutions, I focus on delivering robust, maintainable, and
-        future-ready systems powered by Ruby on Rails.
-      </p>
-
-      <a href="https://github.com/fernandodxx" class="button button--primary">View Projects &rarr;</a>
-
-      <p class="hero__contact-links">
-        Get in touch via
-        <a href="mailto:fernandosillvasantoss@gmail.com" class="link-style">Email</a>
-        or
-        <a href="https://www.linkedin.com/in/fernando-santoss" target="linkedin" class="link-style">LinkedIn</a>
-      </p>
-    </section>
-  </main>
-
-  <section class="projects">
-    <div class="projects__content">
-      <h2 class="projects__heading">My Projects</h2>
-
-      <div class="projects__grid">
-        <article class="project-card">
-          <header class="project-card__header">
-            <h3 class="project-card__title">Flight Reservation</h3>
-            <div class="project-card__tech-stack">
-              <span class="tech-tag tech-tag--ruby">Rails 7 </span>
-              <span class="tech-tag tech-tag--db"> SQLite </span>
-              <span class="tech-tag tech-tag--js"> ActiveRecord </span>
-            </div>
-          </header>
-          <p class="project-card__description">
-            Flight booking system built with Ruby on Rails. Users search for flights by airport and date, select the desired option, and input passenger data via nested forms.
+<div class="portfolio-page">
+  <!-- Hero Section -->
+  <section class="portfolio-hero">
+    <div class="container">
+      <div class="portfolio-hero-content">
+        <div class="portfolio-hero-text">
+          <span class="portfolio-emoji">👨‍💻</span>
+          <h1 class="portfolio-title">Hello, I'm Fernando</h1>
+          <p class="portfolio-subtitle">Full-Stack Ruby on Rails Developer</p>
+          <p class="portfolio-description">
+            Building scalable, high-performance applications with Ruby on Rails.
+            Focused on delivering robust, maintainable, and future-ready systems.
           </p>
-          <div class="project-card__links">
-            <a href="https://github.com/fernandodxx/Flight-Booker" target="_blank" class="project-card__link">Ver Código (GitHub)</a>
+          <div class="portfolio-hero-actions">
+            <a href="https://github.com/fernandodxx" class="btn btn-primary" target="_blank" rel="noopener">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+              </svg>
+              View GitHub
+            </a>
+            <a href="mailto:fernandosillvasantoss@gmail.com" class="btn btn-secondary">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              Get in Touch
+            </a>
           </div>
-        </article>
-
-        <article class="project-card">
-          <header class="project-card__header">
-            <h3 class="project-card__title">Quote Editor - Hotwire Rails</h3>
-            <div class="project-card__tech-stack">
-              <span class="tech-tag tech-tag--ruby">Rails 7 </span>
-              <span class="tech-tag tech-tag--js"> Hotwire</span>
-              <span class="tech-tag tech-tag--db"> PostgreSQL</span>
-              <span class="tech-tag tech-tag--sass"> Sass</span>
-            </div>
-          </header>
-          <p class="project-card__description">
-            Reactive single-page application built with Hotwire/Turbo Rails. Real-time updates via Action Cable and SPA experience without custom JavaScript.
-          </p>
-          <div class="project-card__links">
-            <a href="https://github.com/fernandodxx/Quote-Editor" target="_blank" class="project-card__link">Ver Código (GitHub)</a>
-          </div>
-        </article>
-
-       <article class="project-card">
-         <header class="project-card__header">
-           <h3 class="project-card__title">Pay TV System - Rails 8</h3>
-           <div class="project-card__tech-stack">
-             <span class="tech-tag tech-tag--ruby">Rails 8 </span>
-             <span class="tech-tag tech-tag--js"> Hotwire</span>
-             <span class="tech-tag tech-tag--db"> SQLite</span>
-           </div>
-         </header>
-        <p class="project-card__description">
-          Complete subscription management system for pay-TV services. Features plans, packages, and additional services CRUD, with complex business validation rules. Automatically generates 12 monthly invoices, bills, and payment books per subscription. Uses transactions for data integrity and Hotwire for reactive UI.
-        </p>
-        <div class="project-card__links">
-          <a href="https://github.com/fernandodxx/Pay-tv-system" target="_blank" class="project-card__link">Ver Código (GitHub)</a>
         </div>
-      </article>
 
+        <div class="portfolio-hero-visual">
+          <div class="code-window">
+            <div class="code-header">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+            </div>
+            <div class="code-content">
+              <div class="code-line">
+                <span class="line-num">1</span>
+                <span class="line-code"><span class="keyword">class</span> <span class="function">Developer</span> <span class="keyword">&lt;</span> ApplicationRecord</span>
+              </div>
+              <div class="code-line">
+                <span class="line-num">2</span>
+                <span class="line-code">  <span class="function">hasa_many</span> <span class="string">:skills</span>, <span class="keyword">through:</span> <span class="string">:experiences</span></span>
+              </div>
+              <div class="code-line">
+                <span class="line-num">3</span>
+                <span class="line-code">  <span class="function">hasa_many</span> <span class="string">:projects</span>, <span class="keyword">dependent:</span> <span class="string">:destroy</span></span></span>
+              </div>
+              <div class="code-line">
+                <span class="line-num">4</span>
+                <span class="line-code"></span>
+              </div>
+              <div class="code-line">
+                <span class="line-num">5</span>
+                <span class="line-code">  <span class="comment"># Rails, Hotwire, PostgreSQL</span></span>
+              </div>
+              <div class="code-line">
+                <span class="line-num">6</span>
+                <span class="line-code">  <span class="keyword">def</span> <span class="function">build_awesome_stuff</span></span>
+              </div>
+              <div class="code-line">
+                <span class="line-num">7</span>
+                <span class="line-code">    <span class="string">"Let's work together! 🚀"</span></span>
+              </div>
+              <div class="code-line">
+                <span class="line-num">8</span>
+                <span class="line-code">  <span class="keyword">end</span></span>
+              </div>
+              <div class="code-line">
+                <span class="line-num">9</span>
+                <span class="line-code"><span class="keyword">end</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tech Stack Section -->
+  <section class="tech-stack-section">
+    <div class="container">
+      <h2 class="tech-stack-title">Technologies I Work With</h2>
+      <div class="tech-stack-grid">
+        <div class="tech-item">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm0 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm-1.5 5v5.5H5v3h5.5V21h3v-5.5H19v-3h-5.5V7h-3z"/>
+          </svg>
+          <span>Ruby</span>
+        </div>
+        <div class="tech-item">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M3.955 7.18l9.008-5.18 9.008 5.18v10.36l-9.008 5.18-9.008-5.18V7.18zm9.008 12.86l6.914-3.99V8.94l-6.914 3.99v7.11zm-8.094-3.99l6.914 3.99v-7.11l-6.914-3.99v7.11zm8.094-8.89l-5.69 3.29 5.69 3.29 5.69-3.29-5.69-3.29z"/>
+          </svg>
+          <span>Rails</span>
+        </div>
+        <div class="tech-item">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+          </svg>
+          <span>Hotwire</span>
+        </div>
+        <div class="tech-item">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/>
+          </svg>
+          <span>PostgreSQL</span>
+        </div>
+        <div class="tech-item">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M4.136 6.58s-.636.238-.902.238c-.266 0-1.09-.238-1.09-.238s1.09-.238 1.09-.238c.266 0 .902.238.902.238zm2.402 5.175c.084.07.168.143.252.217 1.06.938 2.324 1.54 3.66 1.785.49.09.984.135 1.48.135h.028c.497 0 .99-.045 1.48-.135 1.336-.245 2.6-.847 3.66-1.785.084-.074.168-.147.252-.217l1.696 1.696c-.14.124-.282.245-.426.363-1.42 1.164-3.12 1.91-4.917 2.24-.618.114-1.243.17-1.868.17h-.028c-.625 0-1.25-.056-1.868-.17-1.797-.33-3.497-1.076-4.917-2.24-.144-.118-.286-.24-.426-.363l1.696-1.696zm12.326 4.93l1.696 1.696c-1.82 1.82-4.24 2.823-6.81 2.823h-.028c-2.57 0-4.99-1.003-6.81-2.823l1.696-1.696c1.42 1.164 3.12 1.91 4.917 2.24.618.114 1.243.17 1.868.17h.028c.625 0 1.25-.056 1.868-.17 1.797-.33 3.497-1.076 4.917-2.24zm-8.11-6.54c.28.235.575.45.88.64.39.24.8.428 1.23.56.43.133.876.2 1.328.2.452 0 .898-.067 1.328-.2.43-.132.84-.32 1.23-.56.305-.19.6-.405.88-.64l1.696 1.696c-.42.35-.866.67-1.33.96-.57.35-1.17.63-1.79.83-.62.2-1.26.31-1.9.34h-.028c-.64-.03-1.28-.14-1.9-.34-.62-.2-1.22-.48-1.79-.83-.464-.29-.91-.61-1.33-.96l1.696-1.696zM12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+          </svg>
+          <span>SQLite</span>
+        </div>
+        <div class="tech-item">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15h-2v-6h2v6zm0-8h-2V7h2v2zm4 8h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+          </svg>
+          <span>Redis</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects-section">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-subtitle">A selection of my recent work</p>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12h20"></path>
+              <path d="M20 12v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-8"></path>
+              <path d="m4 8 16-4"></path>
+              <path d="m8.86 6.78-.45-1.81a2 2 0 0 1 1.45-2.43l1.94-.48a2 2 0 0 1 2.43 1.46l.45 1.8"></path>
+            </svg>
+          </div>
+          <h3 class="project-title">Flight Reservation System</h3>
+          <p class="project-description">
+            Flight booking system built with Ruby on Rails. Users search flights by airport and date,
+            select options, and input passenger data via nested forms.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Rails 7</span>
+            <span class="tech-tag">SQLite</span>
+            <span class="tech-tag">ActiveRecord</span>
+          </div>
+          <a href="https://github.com/fernandodxx/Flight-Booker" class="project-link" target="_blank" rel="noopener">
+            View on GitHub
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+              <polyline points="14 2 14 8 20 8"></polyline>
+              <path d="M8 13h2"></path>
+              <path d="M8 17h2"></path>
+              <path d="M14 13h2"></path>
+              <path d="M14 17h2"></path>
+            </svg>
+          </div>
+          <h3 class="project-title">Quote Editor (Hotwire)</h3>
+          <p class="project-description">
+            Reactive SPA built with Hotwire/Turbo Rails. Real-time updates via Action Cable
+            with SPA experience without custom JavaScript.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Rails 7</span>
+            <span class="tech-tag">Hotwire</span>
+            <span class="tech-tag">PostgreSQL</span>
+            <span class="tech-tag">Sass</span>
+          </div>
+          <a href="https://github.com/fernandodxx/Quote-Editor" class="project-link" target="_blank" rel="noopener">
+            View on GitHub
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <div class="project-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"></rect>
+              <path d="M6 8h.01"></path>
+              <path d="M10 8h.01"></path>
+              <path d="M14 8h.01"></path>
+              <path d="M18 8h.01"></path>
+              <path d="M8 12h.01"></path>
+              <path d="M12 12h.01"></path>
+              <path d="M16 12h.01"></path>
+            </svg>
+          </div>
+          <h3 class="project-title">Pay TV System (Rails 8)</h3>
+          <p class="project-description">
+            Complete subscription management system for pay-TV services. CRUD for plans/packages,
+            auto-generates invoices and payment books per subscription. Uses transactions for data integrity
+            and Hotwire for reactive UI.
+          </p>
+          <div class="project-tech-stack">
+            <span class="tech-tag">Rails 8</span>
+            <span class="tech-tag">Hotwire</span>
+            <span class="tech-tag">SQLite</span>
+          </div>
+          <a href="https://github.com/fernandodxx/Pay-tv-system" class="project-link" target="_blank" rel="noopener">
+            View on GitHub
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+              <polyline points="15 3 21 3 21 9"></polyline>
+              <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="contact-title">Let's Work Together</h2>
+      <p class="contact-description">
+        Interested in collaborating or have a project in mind? Get in touch.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:fernandosillvasantoss@gmail.com" class="contact-link">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Email
+        </a>
+        <a href="https://www.linkedin.com/in/fernando-santoss" class="contact-link" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+            <rect x="2" y="9" width="4" height="12"></rect>
+            <circle cx="4" cy="4" r="2"></circle>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/fernandodxx" class="contact-link" target="_blank" rel="noopener">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path>
+          </svg>
+          GitHub
+        </a>
       </div>
     </div>
   </section>
