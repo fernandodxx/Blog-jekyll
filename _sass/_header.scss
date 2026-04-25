@@ -1,24 +1,50 @@
 .site-header-minimal {
   background: var(--bg-secondary);
-  padding: 20px 0;
+  padding: 15px 0;
   border-bottom: 1px solid var(--border-color);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
   @media (max-width: 768px) {
-    padding: 15px 0;
+    padding: 12px 0;
   }
 }
 
 .header-container-minimal {
-  max-width: 300px;
+  max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 20px;
 
   @media (max-width: 768px) {
-    padding: 0 15px;
+    padding: 0 16px;
+    gap: 12px;
+  }
+}
+
+.site-logo-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.02);
+  }
+}
+
+.site-logo {
+  height: 55px;
+  width: auto;
+  object-fit: contain;
+
+  @media (max-width: 768px) {
+    height: 42px;
   }
 }
 
@@ -30,14 +56,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
-    gap: 25px;
+    gap: 28px;
 
     @media (max-width: 768px) {
-      gap: 15px;
+      gap: 18px;
       justify-content: flex-end;
     }
     @media (max-width: 480px) {
-      gap: 10px;
+      gap: 14px;
       justify-content: center;
     }
   }
@@ -45,15 +71,18 @@
   li a {
     color: var(--text-primary);
     text-decoration: none;
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: all 0.2s ease;
     display: inline-flex;
     align-items: center;
-    gap: 5px;
+    gap: 6px;
+    padding: 6px 10px;
+    border-radius: 6px;
 
     &:hover {
       color: var(--accent);
+      background: var(--bg-tertiary);
     }
 
     .fab {

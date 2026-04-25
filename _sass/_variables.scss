@@ -19,6 +19,8 @@
   /* Bordas e outros */
   --border-color:   #E2E8F0;
   --hover-bg:       rgba(37, 99, 235, 0.05);
+  --bg-secondary:   #FFFFFF;
+  --bg-tertiary:    #F1F5F9;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -42,5 +44,7 @@
     /* Bordas e outros */
     --border-color:   #334155;
     --hover-bg:       rgba(255, 255, 255, 0.05);
+    --bg-secondary:   #1A1F26;
+    --bg-tertiary:    #252D3A;
   }
 }
